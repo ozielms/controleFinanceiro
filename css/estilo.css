@@ -1,10 +1,4 @@
-* {
-    background-color: rgb(134, 134, 134);
-}
 
-input {
-    background-color: white;
-}
 
 .principal {
     border: 1px solid black;
@@ -39,6 +33,3 @@ table tr td {
     font-weight: 800;
 }
 
-.tdInativo {
-    background- color: rgb(134, 134, 134);
-}

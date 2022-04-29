@@ -6,4 +6,3 @@ Tecnologia usada
 - HTML
 - CSS
 - JavaScript
-- 
