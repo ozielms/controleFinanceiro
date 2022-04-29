@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com JS</title>
+
+    <script type="text/javascript" src="/js/scripts.js"></script>
+    <link rel="stylesheet" href="/css/estilo.css">
+
+</head>
+
+<body>
+
+    <div class="principal">
+        <div id="dfPessoas">
+            <form class="fPessoas">
+                <label>Cartão</label><br />
+                <input type="text" name="txtNomeCartao" placeholder="Nome do cartão">
+                <br />
+                <br />
+
+                <label>Descrição</label><br />
+                <input type="text" name="txtDescricao" placeholder="Com o que gastou...">
+                <br />
+                <br />
+
+                <label>Valor</label><br />
+                <input type="text" name="txtValorCompra" placeholder="Valor total da compra.">
+                <br />
+                <br />
+
+                <label>Parcelas</label><br />
+                <input type="number" name="txtParcelas" placeholder="Número de parcelas">
+                <br />
+                <br />
+
+  
+                <input type="button" value="Adiciona Pessoa"
+                    onclick="cadPessoa(txtNomeCartao.value, txtDescricao.value, txtValorCompra.value, txtParcelas.value, total.value)">
+            </form>
+        </div>
+
+
+        <div id="dtPessoas">
+            <table id="tbGastos">
+                <thead>
+                    <tr>
+                        <td>Código</td>
+                        <td>Cartão</td>
+                        <td>Descrição</td>
+                        <td>Valor da compra</td>
+                        <td>Número de parcelas</td>
+                        <td>Valor da parcela</td>
+                    </tr>
+                </thead>
+            </table>
+            <table id="tbTotal">
+                <tr>
+                    <td class="tdInativo"></td>
+                    <td class="tdInativo"></td>
+                    <td class="tdInativo"></td>
+                    <td class="tdInativo"></td>
+                    <td class="tdTotal">Total</td>
+                    <td class="tdTotal" id="total">1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

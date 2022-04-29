@@ -1,0 +1,44 @@
+* {
+    background-color: rgb(134, 134, 134);
+}
+
+input {
+    background-color: white;
+}
+
+.principal {
+    border: 1px solid black;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#dfPessoas {
+
+    width: 49%;
+    font: 14px Verdana;
+}
+
+#dtPessoas {
+    
+    min-width: 380px;
+    width: 49%;
+    font: 14px Verdana;
+}
+
+table tr td {
+    background-color: white;
+    width: 140px;
+    text-align: center;
+}
+
+.tdTotal {
+    text-align: right;
+    font-weight: 800;
+}
+
+.tdInativo {
+    background- color: rgb(134, 134, 134);
+}
