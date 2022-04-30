@@ -21,8 +21,10 @@ function cadPessoa(cartao, descricao, valorCompra, numParcelas) {
     cellValorDaParcela.innerHTML = parseFloat(valorCompra) / parseFloat(numParcelas);
 
     console.log("Soma: " + soma); //0
-    soma = parseFloat(soma) + parseFloat(cellValorDaParcela);
-    console.log("Soma: " + soma); //NaN
+    /*soma = parseFloat(soma) + parseFloat(cellValorDaParcela);
+    console.log("Soma: " + soma.value); //NaN*/
+    soma = parseFloat(soma) + cellValorDaParcela;
+    console.log("Soma: " + soma.value); //undefined
     soma = parseFloat(soma);
     console.log("Soma: " + soma); //NaN
 
