@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 2</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pag2.html" id="selecionado">Pag 2</a></li>
+            <li><a href="pag3.html">Pag 3</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="table-responsive">
+        <table class="table table-hover" table="calculasinal">
+            <tr>
+                <th>Descrição</th>
+                <th>Ato /A vista</th>
+                <th>Para 30 dias</th>
+                <th>Para 60 dias</th>
+                <th>Total</th>
+            </tr>
+
+            <tr>
+                <td id="td-coordenacao1">Coordenação</td>
+
+                <td><input type="text" id="coordenacao11" name="coordenacao11[]" mask="#00.000.000.000.000,00"
+                        onchange="soma()"></td>
+                <td><input type="text" id="coordenacao12" name="coordenacao12[]" mask="#00.000.000.000.000,00"
+                        onchange="soma()"></td>
+                <td><input type="text" id="coordenacao13" name="coordenacao13[]" mask="#00.000.000.000.000,00"
+                        onchange="soma()"></td>
+                <td><input type="text" id="totalcoord" name="totalcoord[]" onchange="soma()"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function soma() {
+            var ato2 = document.getElementById("coordenacao11").value;
+            var Tdias2 = document.getElementById("coordenacao12").value;
+            var Sdias2 = document.getElementById("coordenacao13").value;
+            var soma = parseFloat(ato2) + parseFloat(Tdias2) + parseFloat(Sdias2);
+            var x = document.getElementById("totalcoord");
+
+            if (ato2 == "" || Tdias2 == "" || Sdias2 == "") {
+                x.value = "";
+                return false;
+            }
+
+            else {
+                x.value = soma;
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

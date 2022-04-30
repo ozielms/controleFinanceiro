@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas com JS</title>
 
-    <script type="text/javascript" src="/js/scripts.js"></script>
+    <script type="text/javascript" src="/js/scripts2.js"></script>
     <link rel="stylesheet" href="/css/estilo.css">
 
 </head>
@@ -26,32 +26,33 @@
         <div id="dfPessoas">
             <form class="fPessoas">
                 <label>Cartão</label><br />
-                <input type="text" name="txtNomeCartao" placeholder="Nome do cartão" >
+                <input type="text" name="cartao" placeholder="Nome do cartão">
                 <br />
                 <br />
 
                 <label>Descrição</label><br />
-                <input type="text" name="txtDescricao" placeholder="Com o que gastou...">
+                <input type="text" name="descricao" placeholder="Com o que gastou...">
                 <br />
                 <br />
 
                 <label>Valor</label><br />
-                <input type="text" name="txtValorCompra" placeholder="Valor total da compra." mask="#00.000.000.000.000,00">
+                <input type="text" name="valor" placeholder="Valor total da compra." mask="#00.000.000.000.000,00">
                 <br />
                 <br />
 
                 <label>Parcelas</label><br />
-                <input type="number" name="txtParcelas" placeholder="Número de parcelas" mask="#00.000.000.000.000,00">
+                <input type="number" name="parcelas" placeholder="Número de parcelas" mask="#00.000.000.000.000,00">
                 <br />
                 <br />
 
-  
-                <input type="button" value="Adiciona Pessoa"
-                    onclick="cadPessoa(txtNomeCartao.value, txtDescricao.value, txtValorCompra.value, txtParcelas.value)">
+
+                <input type="button" value="Adicionar compra"
+                    onclick="cadCompra(cartao.value, descricao.value, valor.value, parcelas.value)">
             </form>
+            <a href="pag2.html">Pagina2</a>
         </div>
 
-        <div id="dtPessoas">
+        <div id="tabelaCompras">
             <table id="tbGastos">
                 <thead>
                     <tr>
@@ -68,10 +69,6 @@
             <table id="tbTotal">
                 <thead>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td>Total: </td>
                         <td id="celTotal">0</td>
                     </tr>
@@ -80,6 +77,10 @@
 
 
 
+            <form id="tbTotal">
+                <label>Total</label>
+                <input type="text" id="total" name="total" onchange="soma()">
+            </form>
         </div>
     </div>
 </body>
