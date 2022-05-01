@@ -6,3 +6,6 @@ Tecnologia usada
 - HTML
 - CSS
 - JavaScript
+
+OBS: o campo Total ainda não está funcionando.
+    formulário "frm" input id "celTotal.
