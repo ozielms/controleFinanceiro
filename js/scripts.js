@@ -30,25 +30,22 @@ function cadContas(cartao, descricao, valorCompra, numParcelas) {
 
     console.log("1. Valor da Parcela: " + valorParcela);
     console.log("2. Número de linhas: " + qtdLinhas);
-    
-    var f = document.querySelector("#frm");
-    var capturado = f.celTotal.value;
-    if (capturado == NaN) {
-        capturado = 0;
-    }
+
+    var f = document.querySelector(".celTotal");
+    var capturado = f.value;
     
     console.log("3. Capturado: " + capturado);
-    
+
     var soma = 0;
     console.log("4. Soma: " + soma);
-    soma =+ parseFloat(valorParcela);
+    var soma = + valorParcela;
     console.log("5. Soma: " + soma);
 
     console.log("6. Soma após somar: " + parseFloat(soma));
 
     capturado = soma;
-    console.log("7. Capturado: "+capturado);
-    capturado.innerHTML = cartao;
+    console.log("7. Capturado: " + capturado);
+    capturado.textContent = cartao;
     console.log("--------------------------------------------------------");
 
 }
