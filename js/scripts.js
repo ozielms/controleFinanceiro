@@ -1,8 +1,11 @@
-var soma = parseFloat(0);
-function cadPessoa(cartao, descricao, valorCompra, numParcelas) {
-    var tabela = document.getElementById("tbGastos");/* Pegar a table */
-    var qtdLinhas = tabela.rows.length; /* Ver quantas linhas tem a tabela */
-    var linha = tabela.insertRow(qtdLinhas); /* Inserir uma linha */
+
+
+
+
+function cadContas(cartao, descricao, valorCompra, numParcelas) {
+    var tb = document.getElementById("tbGastos");/* Pegar a table */
+    var qtdLinhas = tb.rows.length; /* Ver quantas linhas tem a tabela */
+    var linha = tb.insertRow(qtdLinhas); /* Inserir uma linha */
 
     /* Inserir colunas na tabela */
     var cellCodigo = linha.insertCell(0);
@@ -12,44 +15,40 @@ function cadPessoa(cartao, descricao, valorCompra, numParcelas) {
     var cellNumParcelas = linha.insertCell(4);
     var cellValorDaParcela = linha.insertCell(5);
 
+    valorParcela = parseFloat(valorCompra) / parseFloat(numParcelas);
+
     /* Inserir dados no HTML */
     cellCodigo.innerHTML = qtdLinhas;
     cellcartao.innerHTML = cartao;
     cellDescricao.innerHTML = descricao;
     cellValorCompra.innerHTML = valorCompra;
     cellNumParcelas.innerHTML = numParcelas;
-    cellValorDaParcela.innerHTML = parseFloat(valorCompra) / parseFloat(numParcelas);
+    cellValorDaParcela.innerHTML = valorParcela;
 
-    console.log("Soma: " + soma); //0
-    /*soma = parseFloat(soma) + parseFloat(cellValorDaParcela);
-    console.log("Soma: " + soma.value); //NaN*/
-    soma = parseFloat(soma) + cellValorDaParcela;
-    console.log("Soma: " + soma.value); //undefined
-    soma = parseFloat(soma);
-    console.log("Soma: " + soma); //NaN
 
+    /* CAPTURAR VALOR DO TOTAL */
+
+    console.log("1. Valor da Parcela: " + valorParcela);
+    console.log("2. Número de linhas: " + qtdLinhas);
     
-    /* ----------------------------------------------------- */
-
+    var f = document.querySelector("#frm");
+    var capturado = f.celTotal.value;
+    if (capturado == NaN) {
+        capturado = 0;
+    }
     
+    console.log("3. Capturado: " + capturado);
+    
+    var soma = 0;
+    console.log("4. Soma: " + soma);
+    soma =+ parseFloat(valorParcela);
+    console.log("5. Soma: " + soma);
 
+    console.log("6. Soma após somar: " + parseFloat(soma));
 
-
+    capturado = soma;
+    console.log("7. Capturado: "+capturado);
+    capturado.innerHTML = cartao;
+    console.log("--------------------------------------------------------");
 
 }
-
-//function soma() {
-//    var tabela = document.getElementById("tbGastos");/* Pegar a table */
-//    var qtdLinhas = tabela.rows.length; /* Ver quantas linhas tem a tabela */
-//    var total = document.getElementById("tbTotal");
-//    var novoValor = document.getElementById("txtDescricao");
-//
-//
-//    for (var i = 0; i < qtdLinhas; i++) {
-//        total.value = total.value + novoValor;
-//    }
-//    console.log(total.value);
-//    return total.value;
-//}
-
-

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas com JS</title>
 
-    <script type="text/javascript" src="/js/scripts.js"></script>
+    <script type="text/javascript" src="/js/scripts.js" defer></script>
     <link rel="stylesheet" href="/css/estilo.css">
 
 </head>
@@ -19,6 +19,7 @@
             <li><a href="index.html" id="selecionado">Home</a></li>
             <li><a href="pag2.html">Pag 2</a></li>
             <li><a href="pag3.html">Pag 3</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
         </ul>
     </nav>
 
@@ -26,7 +27,7 @@
         <div id="dfPessoas">
             <form class="fPessoas">
                 <label>Cartão</label><br />
-                <input type="text" name="txtNomeCartao" placeholder="Nome do cartão" >
+                <input type="text" name="txtNomeCartao" placeholder="Nome do cartão">
                 <br />
                 <br />
 
@@ -36,7 +37,8 @@
                 <br />
 
                 <label>Valor</label><br />
-                <input type="text" name="txtValorCompra" placeholder="Valor total da compra." mask="#00.000.000.000.000,00">
+                <input type="text" name="txtValorCompra" placeholder="Valor total da compra."
+                    mask="#00.000.000.000.000,00">
                 <br />
                 <br />
 
@@ -45,9 +47,9 @@
                 <br />
                 <br />
 
-  
+
                 <input type="button" value="Adiciona Pessoa"
-                    onclick="cadPessoa(txtNomeCartao.value, txtDescricao.value, txtValorCompra.value, txtParcelas.value)">
+                    onclick="cadContas(txtNomeCartao.value, txtDescricao.value, txtValorCompra.value, txtParcelas.value)">
             </form>
         </div>
 
@@ -73,7 +75,11 @@
                         <td></td>
                         <td></td>
                         <td>Total: </td>
-                        <td id="celTotal">0</td>
+                        <td>
+                            <form id="frm">
+                                <input type="text" id="celTotal" size="9">
+                            </form>
+                        </td>
                     </tr>
                 </thead>
             </table>
