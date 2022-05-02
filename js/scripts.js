@@ -2,7 +2,7 @@
 
 
 
-function cadContas(cartao, descricao, valorCompra, numParcelas) {
+function cadContas(cartao, descricao, valorCompra, numParcelas, x) {
     var tb = document.getElementById("tbGastos");/* Pegar a table */
     var qtdLinhas = tb.rows.length; /* Ver quantas linhas tem a tabela */
     var linha = tb.insertRow(qtdLinhas); /* Inserir uma linha */
@@ -36,10 +36,12 @@ function cadContas(cartao, descricao, valorCompra, numParcelas) {
 
     console.log("3. Capturado: " + capturado);
 
-    capturado = parseFloat(capturado) + parseFloat(valorParcela);
+    var temp = parseFloat(capturado) + parseFloat(valorParcela);
 
+    
     console.log("4. Capturado: " + capturado);
-    capturado.textContent = cartao;
+    capturado.value = temp;
+    console.log("4. Capturado: " + capturado);
     console.log("--------------------------------------------------------");
 
 }
