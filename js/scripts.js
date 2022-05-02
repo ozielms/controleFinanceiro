@@ -33,18 +33,12 @@ function cadContas(cartao, descricao, valorCompra, numParcelas) {
 
     var f = document.querySelector(".celTotal");
     var capturado = f.value;
-    
+
     console.log("3. Capturado: " + capturado);
 
-    var soma = 0;
-    console.log("4. Soma: " + soma);
-    var soma = + valorParcela;
-    console.log("5. Soma: " + soma);
+    capturado = parseFloat(capturado) + parseFloat(valorParcela);
 
-    console.log("6. Soma após somar: " + parseFloat(soma));
-
-    capturado = soma;
-    console.log("7. Capturado: " + capturado);
+    console.log("4. Capturado: " + capturado);
     capturado.textContent = cartao;
     console.log("--------------------------------------------------------");
 
