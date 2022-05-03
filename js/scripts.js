@@ -18,15 +18,18 @@ function cadContas(cartao, descricao, valorCompra, numParcelas) {
     cellCodigo.innerHTML = qtdLinhas;
     cellcartao.innerHTML = cartao;
     cellDescricao.innerHTML = descricao;
-    cellValorCompra.innerHTML = valorCompra;
+    cellValorCompra.innerHTML = parseFloat(valorCompra).toFixed(2);
     cellNumParcelas.innerHTML = numParcelas;
-    cellValorDaParcela.innerHTML = valorParcela;
+    cellValorDaParcela.innerHTML = valorParcela.toFixed(2);
 
 
     /* CAPTURAR VALOR DO TOTAL E DEVOLVER SOMADO*/
     var f = document.querySelector(".celTotal");
     var capturado = f.value;
+    if (capturado == "") {
+        capturado = 0;
+    }
     var temp = parseFloat(capturado) + parseFloat(valorParcela);
-    f.value = temp;
+    f.value = temp.toFixed(2);
 
 }

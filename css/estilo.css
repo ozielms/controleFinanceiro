@@ -1,4 +1,4 @@
-
+/* MENU */
 
 nav {
     align-content: flex-start;
@@ -39,6 +39,8 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* TABELAS */
+
 .principal {
     padding: 10px;
     width: 98%;
@@ -48,13 +50,13 @@ nav ul li a:hover {
     flex-direction: row;
 }
 
-#dfPessoas {
+#dfContas {
 
     width: 49%;
     font: 14px Verdana;
 }
 
-#dtPessoas {
+#dtContas {
     
     min-width: 380px;
     width: 49%;
@@ -72,6 +74,82 @@ table tr td {
     font-weight: 800;
 }
 
+.celTotal {
+    width: 100%;
+    border: none;
+}
+
 #tbGastos thead tr td {
+    font-size: 0.7em;
+}
+.tbTotalTd {
     border-bottom: 1px solid black;
+    font-size: 0.8em;
+}
+
+.dLeft {
+    border: 1px solid black;
+
+    width: 14%;
+}
+
+.dRight {
+    border: 1px solid brown;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+}
+
+.meses {
+
+    width: 33.1%;
+    max-height: 25%;
+    overflow-x: auto;
+}
+
+.janeiro {
+    border: 1px solid red;
+    background-image: url("/Image/janeiro.jpg");
+}
+
+.fevereiro {
+    border: 1px solid darkblue;
+    background-image: url("/Image/fevereiro.png");
+}
+
+.marco {
+    border: 1px solid darkgoldenrod;
+    background-image: url("/Image/marco.jpg");
+}
+
+.abril {
+    border: 1px solid darkgray;
+    background-image: url("/Image/abril.jpg");
+}
+.maio {
+    background-image: url("/Image/maio.jpg");
+    border: 1px solid seagreen;
+}
+.junho {
+    border: 1px solid violet;
+    background-image: url("/Image/junho.jpg");
+}
+.julho {
+    border: 1px solid darkblue;
+}
+.agosto {
+}
+.setembro {
+    border: 1px solid darkgoldenrod;
+}
+.outubro {
+    border: 1px solid darkgray;
+}
+.novembro {
+    border: 1px solid seagreen;
+}
+.dezembro {
+    border: 1px solid violet;
 }
