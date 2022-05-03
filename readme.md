@@ -12,3 +12,5 @@ OBS: o campo Total ainda não está funcionando.
     - script recebe valor da tabela HTML? OK
     - Script faz a soma? OK
     - script devolve o valor para o HTML? OK
+
+[OzzyBR](https://ozzybr.com.br)
