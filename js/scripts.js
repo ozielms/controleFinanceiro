@@ -1,8 +1,5 @@
 
-
-
-
-function cadContas(cartao, descricao, valorCompra, numParcelas, x) {
+function cadContas(cartao, descricao, valorCompra, numParcelas) {
     var tb = document.getElementById("tbGastos");/* Pegar a table */
     var qtdLinhas = tb.rows.length; /* Ver quantas linhas tem a tabela */
     var linha = tb.insertRow(qtdLinhas); /* Inserir uma linha */
@@ -26,22 +23,10 @@ function cadContas(cartao, descricao, valorCompra, numParcelas, x) {
     cellValorDaParcela.innerHTML = valorParcela;
 
 
-    /* CAPTURAR VALOR DO TOTAL */
-
-    console.log("1. Valor da Parcela: " + valorParcela);
-    console.log("2. Número de linhas: " + qtdLinhas);
-
+    /* CAPTURAR VALOR DO TOTAL E DEVOLVER SOMADO*/
     var f = document.querySelector(".celTotal");
     var capturado = f.value;
-
-    console.log("3. Capturado: " + capturado);
-
     var temp = parseFloat(capturado) + parseFloat(valorParcela);
-
-    
-    console.log("4. Capturado: " + capturado);
-    capturado.value = temp;
-    console.log("4. Capturado: " + capturado);
-    console.log("--------------------------------------------------------");
+    f.value = temp;
 
 }
