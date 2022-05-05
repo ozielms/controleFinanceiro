@@ -1,0 +1,12 @@
+.titleBox {
+  text-align: center;
+
+  padding: 40px 0;
+}
+
+.titleBox_title {
+  font-weight: 500;
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}

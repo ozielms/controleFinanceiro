@@ -1,0 +1,17 @@
+.titleBox {
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+.titleBox h1 {
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.titleBox p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #636364;
+}
