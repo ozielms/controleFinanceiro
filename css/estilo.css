@@ -1,166 +1,163 @@
 /* MENU */
 
 nav {
-    align-content: flex-start;
-    background-color: rgb(190, 209, 245);
-    border: 1px solid rgb(206, 223, 255);
+  align-content: flex-start;
+  background-color: rgb(190, 209, 245);
+  border: 1px solid rgb(206, 223, 255);
 }
 
 nav ul {
-    justify-content: center;
-    width: 98%;
-    display: flex;
-    flex-direction: row;
+  justify-content: center;
+  width: 98%;
+  display: flex;
+  flex-direction: row;
 }
 
 nav ul li {
-    list-style-type: none;
-    margin: 0 10px;
-    width: 120px;
+  list-style-type: none;
+  margin: 0 10px;
+  width: 120px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    size: 1.8em;
-    text-transform: uppercase;
-    font-weight: bold;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
-    border: 1px solid rgb(57, 126, 255);
-    background-color: rgb(128, 169, 247);
-    border-radius: 5px;
+  border: 1px solid rgb(57, 126, 255);
+  background-color: rgb(128, 169, 247);
+  border-radius: 5px;
 }
 
 #selecionado {
-    border: 1px solid white;
-    border-radius: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 /* TABELAS */
 
 .principal {
-    padding: 10px;
-    width: 98%;
-    height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-#dfContas {
-
-    width: 49%;
-    font: 14px Verdana;
-}
-
-#dtContas {
-    
-    min-width: 380px;
-    width: 49%;
-    font: 14px Verdana;
-}
-
-table tr td {
-    background-color: hsl(0, 0%, 100%, 12%);
-    width: 140px;
-    text-align: center;
-}
-
-.tdTotal {
-    text-align: right;
-    font-weight: 800;
-}
-
-.celTotal {
-    background-color: hsl(0, 0%, 100%, 12%);
-    width: 100%;
-    border: none;
-}
-
-#tbGastos thead tr td {
-    font-size: 0.7em;
-}
-.tbTotalTd {
-    border-bottom: 1px solid black;
-    font-size: 0.8em;
+  padding: 10px;
+  width: 98%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .dLeft {
-    border: 1px solid black;
-
-    width: 14%;
+  display: flex;
+  justify-content: center;
+  width: 14%;
 }
 
-.dRight {
-    border: 1px solid brown;
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 85%;
+.dCenter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 85%;
+}
+
+.fContas input {
+    width: 200%;
+}
+
+#dfContas {
+  width: 49%;
+  font: 14px Verdana;
+}
+
+#dtContas {
+  min-width: 380px;
+  width: 49%;
+  font: 14px Verdana;
+}
+
+table tr td {
+  background-color: hsl(0, 0%, 100%, 12%);
+  width: 140px;
+  text-align: center;
+}
+
+.tdTotal {
+  text-align: right;
+  font-weight: 800;
+}
+
+.celTotal {
+  background-color: hsl(0, 0%, 100%, 12%);
+  width: 100%;
+  border: none;
+}
+
+#tbGastos thead tr td {
+  font-size: 0.7em;
+}
+.tbTotalTd {
+  border-bottom: 1px solid black;
+  font-size: 0.8em;
 }
 
 .meses {
-
-    width: 33.1%;
-    max-height: 25%;
-    overflow-x: hidden;
-    overflow-y: auto;
+  width: 33.1%;
+  max-height: 25%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .janeiro {
-    background-image: url("/Image/janeiro.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("/Image/janeiro.jpg");
+  background-size: cover;
 }
 
 .fevereiro {
-    background-image: url("/Image/fevereiro.jpg");
-    background-size: cover;
+  background-image: url("/Image/fevereiro.jpg");
+  background-size: cover;
 }
 
 .marco {
-    background-image: url("/Image/marco.jpg");
-    background-size: cover;
+  background-image: url("/Image/marco.jpg");
+  background-size: cover;
 }
 
 .abril {
-    background-image: url("/Image/abril.jpg");
-    background-size: cover;
+  background-image: url("/Image/abril.jpg");
+  background-size: cover;
 }
 .maio {
-    background-image: url("/Image/maio.jpg");
-    background-size: cover;
+  background-image: url("/Image/maio.jpg");
+  background-size: cover;
 }
 .junho {
-    background-image: url("/Image/junho.jpg");
-    background-size: cover;
+  background-image: url("/Image/junho.jpg");
+  background-size: cover;
 }
 .julho {
-    background-image: url("/Image/julho.jpg");
-    background-size: cover;
+  background-image: url("/Image/julho.jpg");
+  background-size: cover;
 }
 .agosto {
-    background-image: url("/Image/agosto.jpg");
-    background-size: cover;
+  background-image: url("/Image/agosto.jpg");
+  background-size: cover;
 }
 .setembro {
-    background-image: url("/Image/setembro.jpg");
-    background-size: cover;
+  background-image: url("/Image/setembro.jpg");
+  background-size: cover;
 }
 .outubro {
-    background-image: url("/Image/outubro.jpg");
-    background-size: cover;
+  background-image: url("/Image/outubro.jpg");
+  background-size: cover;
 }
 .novembro {
-    background-image: url("/Image/novembro.jpg");
-    background-size: cover;
+  background-image: url("/Image/novembro.jpg");
+  background-size: cover;
 }
 .dezembro {
-    background-image: url("/Image/dezembro.jpg");
-    background-size: cover;
+  background-image: url("/Image/dezembro.jpg");
+  background-size: cover;
 }
