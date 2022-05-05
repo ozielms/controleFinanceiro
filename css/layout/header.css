@@ -1,0 +1,29 @@
+#header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 75px;
+}
+
+.header_logo {
+  color: var(--text-white);
+}
+
+.header_logo h4,
+.header_user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_logo h4 {
+  gap: 2px;
+}
+
+.header_user img {
+  padding: 1px;
+  clip-path: circle();
+  border: 1px solid black;
+  border-radius: 50%;
+}
