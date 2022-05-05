@@ -1,49 +1,37 @@
 /* MENU */
 
 nav {
-  align-content: flex-start;
-  background-color: rgb(190, 209, 245);
-  border: 1px solid rgb(206, 223, 255);
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  justify-content: space-between;
 }
 
-nav ul {
-  justify-content: center;
-  width: 98%;
-  display: flex;
-  flex-direction: row;
+nav h2 {
+  padding-left: 15px;
 }
 
 nav ul li {
   list-style-type: none;
-  margin: 0 10px;
-  width: 120px;
+  padding-right: 15px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: black;
-  padding: 5px;
-  size: 1.8em;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 nav ul li a:hover {
   border: 1px solid rgb(57, 126, 255);
   background-color: rgb(128, 169, 247);
   border-radius: 5px;
-}
-
-#selecionado {
-  border: 1px solid white;
-  border-radius: 5px;
+  padding: 1px;
 }
 
 /* TABELAS */
 
 .principal {
-  padding: 10px;
-  width: 98%;
+  padding: 0;
+  width: 100%;
   height: 500px;
   display: flex;
   flex-wrap: wrap;
@@ -51,20 +39,27 @@ nav ul li a:hover {
 }
 
 .dLeft {
+  background-color: rgb(241, 241, 241);
   display: flex;
   justify-content: center;
-  width: 14%;
+  width: 15%;
 }
 
 .dCenter {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 85%;
+  width: 70
+  %;
+}
+
+.dRight {
+  background-color: rgb(241, 241, 241);
+  width: 15%;
 }
 
 .fContas input {
-    width: 200%;
+  width: 200%;
 }
 
 #dfContas {
@@ -104,60 +99,106 @@ table tr td {
 }
 
 .meses {
-  width: 33.1%;
+  width: 49.5%;
   max-height: 25%;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 .janeiro {
-  background-image: url("/Image/janeiro.jpg");
-  background-size: cover;
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  /*background-image: url("/Image/janeiro.jpg");*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .fevereiro {
-  background-image: url("/Image/fevereiro.jpg");
-  background-size: cover;
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  /*background-image: url("/Image/fevereiro.jpg");*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .marco {
-  background-image: url("/Image/marco.jpg");
-  background-size: cover;
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  /*background-image: url("/Image/marco.jpg");*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .abril {
-  background-image: url("/Image/abril.jpg");
-  background-size: cover;
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  /*background-image: url("/Image/abril.jpg");*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .maio {
-  background-image: url("/Image/maio.jpg");
-  background-size: cover;
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  /*background-image: url("/Image/maio.jpg");*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .junho {
-  background-image: url("/Image/junho.jpg");
-  background-size: cover;
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  /*background-image: url("/Image/junho.jpg");*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .julho {
-  background-image: url("/Image/julho.jpg");
-  background-size: cover;
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  /*background-image: url("/Image/julho.jpg");*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .agosto {
-  background-image: url("/Image/agosto.jpg");
-  background-size: cover;
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  /*background-image: url("/Image/agosto.jpg");*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .setembro {
-  background-image: url("/Image/setembro.jpg");
-  background-size: cover;
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  /*background-image: url("/Image/setembro.jpg");*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .outubro {
-  background-image: url("/Image/outubro.jpg");
-  background-size: cover;
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  /*background-image: url("/Image/outubro.jpg");*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .novembro {
-  background-image: url("/Image/novembro.jpg");
-  background-size: cover;
+  border: 1px solid rgb(243, 201, 124);
+  /*background-image: url("/Image/novembro.jpg");*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .dezembro {
-  background-image: url("/Image/dezembro.jpg");
-  background-size: cover;
+  border: 1px solid rgb(243, 201, 124);
+  /*background-image: url("/Image/dezembro.jpg");*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
