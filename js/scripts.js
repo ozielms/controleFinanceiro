@@ -24,7 +24,7 @@ function cadContas(cartao, descricao, valorCompra, numParcelas) {
 
 
     /* CAPTURAR VALOR DO TOTAL E DEVOLVER SOMADO*/
-    var f = document.querySelector(".celTotal");
+    var f = document.querySelector(".celTotalJan");
     var capturado = f.value;
     if (capturado == "") {
         capturado = 0;
