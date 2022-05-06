@@ -7,10 +7,12 @@ Tecnologia usada
 - CSS
 - JavaScript
 
-OBS: o campo Total ainda não está funcionando.
-    formulário "frm" input id "celTotal.
-    - script recebe valor da tabela HTML? OK
-    - Script faz a soma? OK
-    - script devolve o valor para o HTML? OK
+Pendências
+    
+    - script recebe valor da tabela HTML - RESOLVIDO
+    - Script faz a soma - RESOLVIDO
+    - script devolve o valor para o HTML - RESOLVIDO
+    - Jogar total no campo de cada mês - 
+    - Jogar a primeira parcela no mês selecionado e as demais nos meses subsequentes. 
 
 [OzzyBR](https://ozzybr.com.br)
