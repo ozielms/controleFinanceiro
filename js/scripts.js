@@ -14,20 +14,21 @@ function cadContas(cartao, descricao, valorCompra, dataEntrada, numParcelas) {
   var dia = data.getUTCDate();
 
   var mesTabela = "";
+  var mesTotal = "";
   
   switch(mes) {
-    case 'janeiro': mesTabela = "gastosJan"; break;
-    case 'fevereiro': mesTabela = "gastosFev"; break;
-    case 'março': mesTabela = "gastosMar"; break;
-    case 'abril': mesTabela = "gastosAbr"; break;
-    case 'maio': mesTabela = "gastosMai"; break;
-    case 'junho': mesTabela = "gastosJun"; break;
-    case 'julho': mesTabela = "gastosJul"; break;
-    case 'agosto': mesTabela = "gastosAgo"; break;
-    case 'setembro': mesTabela = "gastosSet"; break;
-    case 'outubro': mesTabela = "gastosOut"; break;
-    case 'novembro': mesTabela = "gastosNov"; break;
-    case 'dezembro': mesTabela = "gastosDez"; break;
+    case 'janeiro': mesTabela = "gastosJan"; mesTotal = "#celTotalJan"; break;
+    case 'fevereiro': mesTabela = "gastosFev"; mesTotal = "#celTotalFev"; break;
+    case 'março': mesTabela = "gastosMar"; mesTotal = "#celTotalMar"; break;
+    case 'abril': mesTabela = "gastosAbr"; mesTotal = "#celTotalAbr"; break;
+    case 'maio': mesTabela = "gastosMai"; mesTotal = "#celTotalMai"; break;
+    case 'junho': mesTabela = "gastosJun"; mesTotal = "#celTotalJun"; break;
+    case 'julho': mesTabela = "gastosJul"; mesTotal = "#celTotalJul"; break;
+    case 'agosto': mesTabela = "gastosAgo"; mesTotal = "#celTotalAgo"; break;
+    case 'setembro': mesTabela = "gastosSet"; mesTotal = "#celTotalSet"; break;
+    case 'outubro': mesTabela = "gastosOut"; mesTotal = "#celTotalOut"; break;
+    case 'novembro': mesTabela = "gastosNov"; mesTotal = "#celTotalNov"; break;
+    case 'dezembro': mesTabela = "gastosDez"; mesTotal = "#celTotalDez"; break;
     default: alert("Mês inválido"); break;
   }
   console.log(mesTabela);
@@ -43,6 +44,8 @@ function cadContas(cartao, descricao, valorCompra, dataEntrada, numParcelas) {
     numeroDeParcelas,
     mesTabela
   ) {
+
+
     var tb = document.getElementById(mesTabela); /* Pegar a table */
     var qtdLinhas = tb.rows.length; /* Ver quantas linhas tem a tabela */
     var linha = tb.insertRow(qtdLinhas); /* Inserir uma linha */
@@ -69,7 +72,7 @@ function cadContas(cartao, descricao, valorCompra, dataEntrada, numParcelas) {
     cellValorDaParcela.innerHTML = parseFloat(valorParcela).toFixed(2);
 
     // CAPTURAR VALOR DO TOTAL E DEVOLVER SOMADO
-    var f = document.querySelector(".celTotalJan");
+    var f = document.querySelector(mesTotal);
     var capturado = f.value;
     if (capturado == "") {
       capturado = 0;
