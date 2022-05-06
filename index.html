@@ -61,6 +61,11 @@
                         <input type="text" name="txtValorCompra" placeholder="Ex. 1000.99" mask="#00.000.000.000.000,00">
                         <br />
                         <br />
+
+                        <label>Data</label><br />
+                        <input type="date" name="txtDate" placeholder="DD/MM/AAAA" mask="#00.000.000.000.000,00">
+                        <br />
+                        <br />
     
                         <label>Parcelas</label><br />
                         <input type="number" name="txtParcelas" placeholder="Número de parcelas"
@@ -70,7 +75,7 @@
     
     
                         <input type="button" value="Adiciona Pessoa"
-                            onclick="cadContas(txtNomeCartao.value, txtDescricao.value, txtValorCompra.value, txtParcelas.value)">
+                            onclick="cadContas(txtNomeCartao.value, txtDescricao.value, txtValorCompra.value, txtDate.value,txtParcelas.value)">
                     </form>
                 </div>
             </div>
@@ -85,6 +90,7 @@
                             <thead>
                                 <tr>
                                     <td>Código</td>
+                                    <td>Dia</td>
                                     <td>Cartão</td>
                                     <td>Descrição</td>
                                     <td>Valor da compra</td>
@@ -94,19 +100,7 @@
                             </thead>
                         </table>
     
-                        <table id="tbTotal">
-                            <thead>
-                                <tr><!--
-                                    <td colspan="3" style="background-color: rgba(0, 0, 0,0);"></td>
-                                    <td>Total: </td>
-                                    <td>
-                                        <form id="frm">
-                                            <input type="text" name="celTotalJan" id="celTotalJan" class="celTotalJan">
-                                        </form> 
-                                    </td>-->
-                                </tr>
-                            </thead>
-                        </table>
+                       
                     </div>
                 </div>
                 <!-- FEVEREIRO -->
@@ -116,6 +110,7 @@
                             <thead>
                                 <tr>
                                     <td>Código</td>
+                                    <td>Dia</td>
                                     <td>Cartão</td>
                                     <td>Descrição</td>
                                     <td>Valor da compra</td>
@@ -125,22 +120,7 @@
                             </thead>
                         </table>
     
-                        <table id="tbTotal">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Total: </td>
-                                    <td>
-                                        <form id="frm">
-                                            <input type="text" name="celTotalFev" id="celTotalFev" class="celTotalFev">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </thead>
-                        </table>
+                       
                     </div>
                 </div>
                 <!-- MARÇO -->
@@ -150,6 +130,7 @@
                             <thead>
                                 <tr>
                                     <td>Código</td>
+                                    <td>Dia</td>
                                     <td>Cartão</td>
                                     <td>Descrição</td>
                                     <td>Valor da compra</td>
@@ -159,22 +140,7 @@
                             </thead>
                         </table>
     
-                        <table id="tbTotal">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="tbTotalTd">Total: </td>
-                                    <td>
-                                        <form id="frm">
-                                            <input type="text" name="celTotalMar" id="celTotalMar" class="celTotalMar">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </thead>
-                        </table>
+                     
                     </div>
                 </div>
                 <!-- ABRIL -->
@@ -184,6 +150,7 @@
                             <thead>
                                 <tr>
                                     <td>Código</td>
+                                    <td>Dia</td>
                                     <td>Cartão</td>
                                     <td>Descrição</td>
                                     <td>Valor da compra</td>
@@ -193,22 +160,7 @@
                             </thead>
                         </table>
     
-                        <table id="tbTotal">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Total: </td>
-                                    <td>
-                                        <form id="frm">
-                                            <input type="text" name="celTotalAbr" id="celTotalAbr" class="celTotalAbr">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </thead>
-                        </table>
+                       
                     </div>
                 </div>
                 <!-- MAIO -->
@@ -218,6 +170,7 @@
                             <thead>
                                 <tr>
                                     <td>Código</td>
+                                    <td>Dia</td>
                                     <td>Cartão</td>
                                     <td>Descrição</td>
                                     <td>Valor da compra</td>
@@ -227,22 +180,7 @@
                             </thead>
                         </table>
     
-                        <table id="tbTotal">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Total: </td>
-                                    <td>
-                                        <form id="frm">
-                                            <input type="text" name="celTotalMai" id="celTotalMai" class="celTotalMai">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </thead>
-                        </table>
+                      
                     </div>
                 </div>
                 <!-- JUNHO -->
@@ -252,6 +190,7 @@
                             <thead>
                                 <tr>
                                     <td>Código</td>
+                                    <td>Dia</td>
                                     <td>Cartão</td>
                                     <td>Descrição</td>
                                     <td>Valor da compra</td>
@@ -261,22 +200,6 @@
                             </thead>
                         </table>
     
-                        <table id="tbTotal">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Total: </td>
-                                    <td>
-                                        <form id="frm">
-                                            <input type="text" name="celTotalJun" id="celTotalJun" class="celTotalJun">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </thead>
-                        </table>
                     </div>
                 </div>
                 <!-- JULHO -->
@@ -286,6 +209,7 @@
                             <thead>
                                 <tr>
                                     <td>Código</td>
+                                    <td>Dia</td>
                                     <td>Cartão</td>
                                     <td>Descrição</td>
                                     <td>Valor da compra</td>
@@ -295,22 +219,7 @@
                             </thead>
                         </table>
     
-                        <table id="tbTotal">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Total: </td>
-                                    <td>
-                                        <form id="frm">
-                                            <input type="text" name="celTotalJul" id="celTotalJul" class="celTotalJul">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </thead>
-                        </table>
+                      
                     </div>
                 </div>
                 <!-- AGOSTO -->
@@ -320,6 +229,7 @@
                             <thead>
                                 <tr>
                                     <td>Código</td>
+                                    <td>Dia</td>
                                     <td>Cartão</td>
                                     <td>Descrição</td>
                                     <td>Valor da compra</td>
@@ -329,22 +239,7 @@
                             </thead>
                         </table>
     
-                        <table id="tbTotal">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Total: </td>
-                                    <td>
-                                        <form id="frm">
-                                            <input type="text" name="celTotalAgo" id="celTotalAgo" class="celTotalAgo">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </thead>
-                        </table>
+                       
                     </div>
                 </div>
                 <!-- SETEMBRO -->
@@ -354,6 +249,7 @@
                             <thead>
                                 <tr>
                                     <td>Código</td>
+                                    <td>Dia</td>
                                     <td>Cartão</td>
                                     <td>Descrição</td>
                                     <td>Valor da compra</td>
@@ -363,22 +259,7 @@
                             </thead>
                         </table>
     
-                        <table id="tbTotal">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Total: </td>
-                                    <td>
-                                        <form id="frm">
-                                            <input type="text" name="celTotalSet" id="celTotalSet" class="celTotalSet">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </thead>
-                        </table>
+                      
                     </div>
                 </div>
                 <!-- OUTUBRO -->
@@ -388,6 +269,7 @@
                             <thead>
                                 <tr>
                                     <td>Código</td>
+                                    <td>Dia</td>
                                     <td>Cartão</td>
                                     <td>Descrição</td>
                                     <td>Valor da compra</td>
@@ -397,22 +279,7 @@
                             </thead>
                         </table>
     
-                        <table id="tbTotal">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Total: </td>
-                                    <td>
-                                        <form id="frm">
-                                            <input type="text" name="celTotalOut" id="celTotalOut" class="celTotalOut">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </thead>
-                        </table>
+                       
                     </div>
                 </div>
                 <!-- NOVEMBRO -->
@@ -422,6 +289,7 @@
                             <thead>
                                 <tr>
                                     <td>Código</td>
+                                    <td>Dia</td>
                                     <td>Cartão</td>
                                     <td>Descrição</td>
                                     <td>Valor da compra</td>
@@ -431,22 +299,6 @@
                             </thead>
                         </table>
     
-                        <table id="tbTotal">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Total: </td>
-                                    <td>
-                                        <form id="frm">
-                                            <input type="text" name="celTotalNov" id="celTotalNov" class="celTotalNov">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </thead>
-                        </table>
                     </div>
                 </div>
                 <!-- DEZEMBRO -->
@@ -456,6 +308,7 @@
                             <thead>
                                 <tr>
                                     <td>Código</td>
+                                    <td>Dia</td>
                                     <td>Cartão</td>
                                     <td>Descrição</td>
                                     <td>Valor da compra</td>
@@ -465,22 +318,7 @@
                             </thead>
                         </table>
     
-                        <table id="tbTotal">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Total: </td>
-                                    <td>
-                                        <form id="frm">
-                                            <input type="text" name="celTotalDez" id="celTotalDez" class="celTotalDez">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </thead>
-                        </table>
+                     
                     </div>
                 </div>
             </div>
