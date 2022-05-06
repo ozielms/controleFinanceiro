@@ -67,7 +67,7 @@ table tr td {
   border: none;
 }
 
-#tbGastos thead tr td {
+.tbGastos thead tr td {
   font-size: 0.7em;
 }
 .tbTotalTd {
