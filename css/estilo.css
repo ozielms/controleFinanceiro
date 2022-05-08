@@ -26,7 +26,7 @@
 .dCenter {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   width: 70%;
 }
 
@@ -46,14 +46,19 @@
 
 #dtContas {
   min-width: 380px;
-  width: 49%;
   font: 14px Verdana;
 }
+
 
 table tr td {
   background-color: hsl(0, 0%, 100%, 12%);
   width: 140px;
   text-align: center;
+}
+
+
+.tbGastos thead tr td {
+  font-size: 0.7em;
 }
 
 .tdTotal {
@@ -66,17 +71,13 @@ table tr td {
   width: 100%;
   border: none;
 }
-
-.tbGastos thead tr td {
-  font-size: 0.7em;
-}
 .tbTotalTd {
   border-bottom: 1px solid black;
   font-size: 0.8em;
 }
 
 .meses {
-  width: 49.5%;
+  width: 50%;
   max-height: 25%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -85,26 +86,26 @@ table tr td {
 .janeiro {
   border: 1px solid rgb(243, 201, 124);
   border-bottom: none;
-  /*background-image: url("/Image/janeiro.jpg");*/
-  background-size: contain;
+  background-image: url("/Image/janeiro.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .fevereiro {
-  border: 1px solid rgb(243, 201, 124);
+  border: 1px solid rgb(124, 243, 140);
   border-bottom: none;
-  /*background-image: url("/Image/fevereiro.jpg");*/
-  background-size: contain;
+  background-image: url("/Image/fevereiro.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .marco {
-  border: 1px solid rgb(243, 201, 124);
+  border: 1px solid rgb(124, 243, 140);
   border-bottom: none;
-  /*background-image: url("/Image/marco.jpg");*/
-  background-size: contain;
+  background-image: url("/Image/marco.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -112,70 +113,70 @@ table tr td {
 .abril {
   border: 1px solid rgb(243, 201, 124);
   border-bottom: none;
-  /*background-image: url("/Image/abril.jpg");*/
-  background-size: contain;
+  background-image: url("/Image/abril.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .maio {
   border: 1px solid rgb(243, 201, 124);
   border-bottom: none;
-  /*background-image: url("/Image/maio.jpg");*/
-  background-size: contain;
+  background-image: url("/Image/maio.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .junho {
-  border: 1px solid rgb(243, 201, 124);
+  border: 1px solid rgb(124, 243, 140);
   border-bottom: none;
-  /*background-image: url("/Image/junho.jpg");*/
-  background-size: contain;
+  background-image: url("/Image/junho.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .julho {
-  border: 1px solid rgb(243, 201, 124);
+  border: 1px solid rgb(124, 243, 140);
   border-bottom: none;
-  /*background-image: url("/Image/julho.jpg");*/
-  background-size: contain;
+  background-image: url("/Image/julho.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .agosto {
   border: 1px solid rgb(243, 201, 124);
   border-bottom: none;
-  /*background-image: url("/Image/agosto.jpg");*/
-  background-size: contain;
+  background-image: url("/Image/agosto.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .setembro {
   border: 1px solid rgb(243, 201, 124);
   border-bottom: none;
-  /*background-image: url("/Image/setembro.jpg");*/
-  background-size: contain;
+  background-image: url("/Image/setembro.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .outubro {
-  border: 1px solid rgb(243, 201, 124);
+  border: 1px solid rgb(124, 243, 140);
   border-bottom: none;
-  /*background-image: url("/Image/outubro.jpg");*/
-  background-size: contain;
+  background-image: url("/Image/outubro.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .novembro {
-  border: 1px solid rgb(243, 201, 124);
-  /*background-image: url("/Image/novembro.jpg");*/
-  background-size: contain;
+  border: 1px solid rgb(124, 243, 140);
+  background-image: url("/Image/novembro.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .dezembro {
-  border: 1px solid rgb(243, 201, 124);
-  /*background-image: url("/Image/dezembro.jpg");*/
-  background-size: contain;
+  border: 1px solid rgb(124, 243, 140);
+  background-image: url("/Image/dezembro.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
