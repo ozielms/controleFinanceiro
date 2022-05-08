@@ -16,4 +16,8 @@ Pendências
     - Jogar a primeira parcela no mês selecionado e as demais nos meses subsequentes.   RESOLVIDO
     - Data padrão Brasil (+3)                                                           PENDENTE
 
-[OzzyBR](https://ozzybr.com.br)
+
+[Link do projeto](https://controlefinanceirofinanse.netlify.app/)
+OBS: Finance escrito com 'S' propositalmente por causa da "marca" (FINAN$E).
+[DEV: OzzyBR](https://ozzybr.com.br)
+

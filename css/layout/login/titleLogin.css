@@ -8,6 +8,7 @@
   font-size: 34px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  color: var(--primary-color);
 }
 
 .titleBox p {
