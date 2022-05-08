@@ -19,6 +19,10 @@ Pendências
 
 
 [Link do projeto](https://controlefinanceirofinanse.netlify.app/)
+
+&nbsp;
 OBS: Finance escrito com 'S' propositalmente por causa da "marca" (FINAN$E).
+
+&nbsp;
 [DEV: OzzyBR](https://ozzybr.com.br)
 
