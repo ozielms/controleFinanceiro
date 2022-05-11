@@ -1,0 +1,193 @@
+/* MENU */
+@import url(../base/global.css);
+
+@import url(../layout/header.css);
+
+@import url(../layout/title.css);
+
+/******************************************/
+
+.principal {
+  padding: 0;
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+/***************** INPUTS ******************/
+
+.dLeft {
+  
+}
+
+.dLeft input[type="text"],
+.dLeft input[type="button"],
+.dLeft input[type="date"],
+.dLeft input[type="number"] {
+  min-width: 98%;
+}
+
+/***************** BOTÕES ******************/
+
+input[type='button'] {
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+}
+
+#headingOne, #headingTwo, #headingThree {
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+}
+
+#headingOne:hover,
+#headingTwo:hover,
+#headingThree:hover {
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+}
+
+.mb-0 h5 button,
+.mb-0 button,
+.mb-0 h5 button {
+  text-decoration: none;
+  color: #fff;
+}
+
+.mb-0 h5 button:hover,
+.mb-0 button:hover,
+.mb-0 h5 button:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/**************** Título ******************/
+
+.dRight h5 {
+  text-align: center;
+}
+
+/*********** Background meses ************/
+
+.janeiro {
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  background-image: url("/Image/janeiro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fevereiro {
+  border: 1px solid rgb(124, 243, 140);
+  border-bottom: none;
+  background-image: url("/Image/fevereiro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.marco {
+  border: 1px solid rgb(124, 243, 140);
+  border-bottom: none;
+  background-image: url("/Image/marco.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.abril {
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  background-image: url("/Image/abril.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.maio {
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  background-image: url("/Image/maio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.junho {
+  border: 1px solid rgb(124, 243, 140);
+  border-bottom: none;
+  background-image: url("/Image/junho.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.julho {
+  border: 1px solid rgb(124, 243, 140);
+  border-bottom: none;
+  background-image: url("/Image/julho.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.agosto {
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  background-image: url("/Image/agosto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.setembro {
+  border: 1px solid rgb(243, 201, 124);
+  border-bottom: none;
+  background-image: url("/Image/setembro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.outubro {
+  border: 1px solid rgb(124, 243, 140);
+  border-bottom: none;
+  background-image: url("/Image/outubro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.novembro {
+  border: 1px solid rgb(124, 243, 140);
+  background-image: url("/Image/novembro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dezembro {
+  border: 1px solid rgb(124, 243, 140);
+  background-image: url("/Image/dezembro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/******* ÚLTIMO RESULTADO TOTAL ********/
+
+#celTotalDez {
+  margin-bottom: 40px;
+}
+
+/******* RODAPÉ ********/
+
+
+footer {
+  position: fixed;
+  opacity: 0.8;
+  bottom: 0;
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}

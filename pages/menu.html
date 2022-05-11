@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FINAN$E</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/responsive/geral.css" />
+    <link rel="stylesheet" href="../css/responsive/xs.css" />
+    <link rel="stylesheet" href="../css/responsive/sm.css" />
+    <link rel="stylesheet" href="../css/responsive/md.css" />
+    <link rel="stylesheet" href="../css/responsive/lg.css" />
+    <link rel="stylesheet" href="../css/responsive/xl.css" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="header_logo">
+        <h4>
+          FINAN
+            <svg
+              width="8"
+              height="13"
+              viewBox="0 0 8 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 8.74627C8 9.24378 7.86226 9.71144 7.58678 10.1493C7.32231 10.5871 6.92562 10.9552 6.39669 11.2537C5.87879 11.5522 5.26171 11.7313 4.54545 11.791V13H3.47107V11.791C2.43526 11.7015 1.5978 11.408 0.958678 10.9104C0.319559 10.4129 0 9.75622 0 8.9403H2.01653C2.04959 9.32836 2.18733 9.65174 2.42975 9.91045C2.67218 10.1592 3.01928 10.3184 3.47107 10.3881V7.10448C2.73278 6.93532 2.13223 6.76617 1.66942 6.59701C1.20661 6.41791 0.809917 6.1393 0.479339 5.76119C0.15978 5.38308 0 4.86567 0 4.20896C0 3.38308 0.319559 2.70149 0.958678 2.16418C1.5978 1.61692 2.43526 1.29851 3.47107 1.20896V0H4.54545V1.20896C5.51515 1.28856 6.29201 1.56716 6.87603 2.04478C7.47107 2.51244 7.80716 3.1592 7.8843 3.98507H5.86777C5.83471 3.67662 5.70248 3.40298 5.47107 3.16418C5.23967 2.91542 4.93113 2.74627 4.54545 2.65672V5.8806C5.28375 6.0398 5.8843 6.20895 6.34711 6.38806C6.80992 6.55721 7.2011 6.83085 7.52066 7.20896C7.84022 7.57711 8 8.08955 8 8.74627ZM1.91736 4.1194C1.91736 4.52736 2.04959 4.84577 2.31405 5.07463C2.58953 5.30348 2.97521 5.48756 3.47107 5.62687V2.61194C2.99725 2.66169 2.61708 2.81592 2.33058 3.07463C2.0551 3.33333 1.91736 3.68159 1.91736 4.1194ZM4.54545 10.3881C5.0303 10.3184 5.41047 10.1443 5.68595 9.86567C5.96143 9.57711 6.09917 9.23383 6.09917 8.83582C6.09917 8.43781 5.96143 8.12935 5.68595 7.91045C5.42149 7.68159 5.04132 7.49751 4.54545 7.35821V10.3881Z"
+                fill="white"/>
+            </svg>
+          E
+        </h4>
+      </div>
+
+      <div class="header_user">
+        <img src="../Image/user.png" alt="Foto de profile do usuário logado" />
+      </div>
+    </header>
+
+    <main>
+      <!---------------------------------------- TÍTULO ---------------------------------------->
+
+      <div class="titleBox">
+        <h1 class="titleBox_title">Gerencie suas finanças</h1>
+        <p class="titleBox_subtitle">
+            Bem vindo! Por favor, insira os dados da(s) compra(s).
+        </p>
+      </div>
+
+
+      <!---------------------------------------- TESTE ---------------------------------------->
+      <div class="container-fluid">
+        <div class="col-sm-15">
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="accordion">
+                <div class="card" >
+                  <div class="card-header" id="headingOne"> 
+                    <h5 class="mb-0">
+                      <button class="btn btn-link"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Alimentar Gastos
+                      </button>
+                    </h5>
+                  </div>
+        
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <!-- ALIMENTAR TABELA - dLeft - ESQUERDA -->
+                        <div class="dLeft">
+                          <h5>Cadastro de compras</h5>
+
+                          <div id="dfContas">
+                            <form class="fContas" id="formCaptura">
+                              <label>Cartão</label><br />
+                              <input type="text" name="txtNomeCartao" placeholder="Nome do cartão"/>
+                              <br />
+                              <br />
+
+                              <label>Descrição</label><br />
+                              <input type="text" name="txtDescricao" placeholder="Com o que gastou..."/>
+                              <br />
+                              <br />
+
+                              <label>Valor</label><br />
+                              <input type="text" name="txtValorCompra" placeholder="Ex. 1000.99" mask="#00.000.000.000.000,00"/>
+                              <br />
+                              <br />
+
+                              <label>Data</label><br />
+                              <input type="date" name="txtDate"placeholder="DD/MM/AAAA" mask="#00.000.000.000.000,00" />
+                              <br />
+                              <br />
+
+                              <label>Parcelas</label><br />
+                              <input type="number" name="txtParcelas" placeholder="Número de parcelas" mask="#00.000.000.000.000,00" />
+                              <br />
+                              <br />
+
+                              <input type="button" value="Adiciona Conta" onclick="cadContas(txtNomeCartao.value, txtDescricao.value, txtValorCompra.value, txtDate.value,txtParcelas.value)" />
+                            </form>
+                          </div>
+                        </div>
+              </div>
+            </div>
+          </div>
+          <div class="card height">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Gastos Mensais
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <!-- PRÉ-RESULTADOS - dCenter - CENTRO -->
+        <div class="dCenter">
+          <!-- JANEIRO -->
+          <div class="janeiro meses">
+            <div id="dtContas">
+              <table id="gastosJan" class="tbGastos">
+                <thead>
+                  <tr>
+                    <td>Código</td>
+                    <td>Dia</td>
+                    <td>Cartão</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Parcelas</td>
+                    <td id="valorDaParcela">Valor parcela</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- FEVEREIRO -->
+          <div class="fevereiro meses">
+            <div id="dtContas">
+              <table id="gastosFev" class="tbGastos">
+                <thead>
+                  <tr>
+                    <td>Código</td>
+                    <td>Dia</td>
+                    <td>Cartão</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Parcelas</td>
+                    <td id="valorDaParcela">Valor parcela</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- MARÇO -->
+          <div class="marco meses">
+            <div id="dtContas">
+              <table id="gastosMar" class="tbGastos">
+                <thead>
+                  <tr>
+                    <td>Código</td>
+                    <td>Dia</td>
+                    <td>Cartão</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Parcelas</td>
+                    <td id="valorDaParcela">Valor parcela</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- ABRIL -->
+          <div class="abril meses">
+            <div id="dtContas">
+              <table id="gastosAbr" class="tbGastos">
+                <thead>
+                  <tr>
+                    <td>Código</td>
+                    <td>Dia</td>
+                    <td>Cartão</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Parcelas</td>
+                    <td id="valorDaParcela">Valor parcela</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- MAIO -->
+          <div class="maio meses">
+            <div id="dtContas">
+              <table id="gastosMai" class="tbGastos">
+                <thead>
+                  <tr>
+                    <td>Código</td>
+                    <td>Dia</td>
+                    <td>Cartão</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Parcelas</td>
+                    <td id="valorDaParcela">Valor parcela</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- JUNHO -->
+          <div class="junho meses">
+            <div id="dtContas">
+              <table id="gastosJun" class="tbGastos">
+                <thead>
+                  <tr>
+                    <td>Código</td>
+                    <td>Dia</td>
+                    <td>Cartão</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Parcelas</td>
+                    <td id="valorDaParcela">Valor parcela</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- JULHO -->
+          <div class="julho meses">
+            <div id="dtContas">
+              <table id="gastosJul" class="tbGastos">
+                <thead>
+                  <tr>
+                    <td>Código</td>
+                    <td>Dia</td>
+                    <td>Cartão</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Parcelas</td>
+                    <td id="valorDaParcela">Valor parcela</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- AGOSTO -->
+          <div class="agosto meses">
+            <div id="dtContas">
+              <table id="gastosAgo" class="tbGastos">
+                <thead>
+                  <tr>
+                    <td>Código</td>
+                    <td>Dia</td>
+                    <td>Cartão</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Parcelas</td>
+                    <td id="valorDaParcela">Valor parcela</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- SETEMBRO -->
+          <div class="setembro meses">
+            <div id="dtContas">
+              <table id="gastosSet" class="tbGastos">
+                <thead>
+                  <tr>
+                    <td>Código</td>
+                    <td>Dia</td>
+                    <td>Cartão</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Parcelas</td>
+                    <td id="valorDaParcela">Valor parcela</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- OUTUBRO -->
+          <div class="outubro meses">
+            <div id="dtContas">
+              <table id="gastosOut" class="tbGastos">
+                <thead>
+                  <tr>
+                    <td>Código</td>
+                    <td>Dia</td>
+                    <td>Cartão</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Parcelas</td>
+                    <td id="valorDaParcela">Valor parcela</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- NOVEMBRO -->
+          <div class="novembro meses">
+            <div id="dtContas">
+              <table id="gastosNov" class="tbGastos">
+                <thead>
+                  <tr>
+                    <td>Código</td>
+                    <td>Dia</td>
+                    <td>Cartão</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Parcelas</td>
+                    <td id="valorDaParcela">Valor parcela</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- DEZEMBRO -->
+          <div class="dezembro meses">
+            <div id="dtContas">
+              <table id="gastosDez" class="tbGastos">
+                <thead>
+                  <tr>
+                    <td>Código</td>
+                    <td>Dia</td>
+                    <td>Cartão</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Parcelas</td>
+                    <td id="valorDaParcela">Valor parcela</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Gasto Total dos Meses
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <div class="dRight">
+                  <h5>TOTAL</h5>
+                  <form>
+                    <label>Janeiro</label><br />
+                    <input
+                      type="text"
+                      name="celTotalJan"
+                      id="celTotalJan"
+                      class="celTotalJan"
+                    /><br />
+        
+                    <label>Fevereiro</label><br />
+                    <input type="text" name="celTotalFev" id="celTotalFev" /><br />
+        
+                    <label>Março</label><br />
+                    <input type="text" name="celTotalMar" id="celTotalMar" /><br />
+        
+                    <label>Abril</label><br />
+                    <input type="text" name="celTotalAbr" id="celTotalAbr" /><br />
+        
+                    <label>Maio</label><br />
+                    <input type="text" name="celTotalMai" id="celTotalMai" /><br />
+        
+                    <label>Junho</label><br />
+                    <input type="text" name="celTotalJun" id="celTotalJun" /><br />
+        
+                    <label>Julho</label><br />
+                    <input type="text" name="celTotalJul" id="celTotalJul" /><br />
+        
+                    <label>Agosto</label><br />
+                    <input type="text" name="celTotalAgo" id="celTotalAgo" /><br />
+        
+                    <label>Setembro</label><br />
+                    <input type="text" name="celTotalSet" id="celTotalSet" /><br />
+        
+                    <label>Outubro</label><br />
+                    <input type="text" name="celTotalOut" id="celTotalOut" /><br />
+        
+                    <label>Novembro</label><br />
+                    <input type="text" name="celTotalNov" id="celTotalNov" /><br />
+        
+                    <label>Dezembro</label><br />
+                    <input type="text" name="celTotalDez" id="celTotalDez" /><br />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-------------------------------------- FIM TESTE -------------------------------------->
+   
+    </main>
+
+    <footer>
+      <p>
+        Desenvolvido pora o Hackathon
+        <a href="https://prestartse.netlify.app" target="_blank">PréStartSe</a>
+      </p>
+    </footer>
+    <!--------------------------------------- SCRIPTs --------------------------------------------->
+    <!-- Script add Contas -->
+    <script type="text/javascript" src="/js/scripts.js" defer></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
