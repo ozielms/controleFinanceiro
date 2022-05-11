@@ -198,15 +198,17 @@ function cadContas(cartao, descricao, valorCompra, dataEntrada, numParcelas) {
     document.getElementById("formCaptura").reset();
   }
 
-  inserirConteudoCell(
-    qtdLinhas,
-    cartao,
-    descricao,
-    valorCompra,
-    dia,
-    numParcelas,
-    mesTabela,
-    contMes
-  );
+
+
+  inserirConteudoCell(qtdLinhas, cartao, descricao, valorCompra, dia, numParcelas, mesTabela, contMes);
   resetar();
+}
+ /*Não FUNCIONA AINDA*/
+function retornarNome(nome) {
+  var nomeRetorno = document.getElementById("uname");
+  var boasVindas = document.getElementById("nomeUsuario");
+
+  boasVindas.innerText = boasVindas.value + nomeRetorno.value;
+
+
 }

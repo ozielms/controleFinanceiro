@@ -3,15 +3,14 @@
   /* TABELAS */
 
   #tamanhoDeTela {
-    min-width: 1100px;
+    min-width: 1024px;
   }
-
 
   .dLeft {
     color: var(--primary-color);
-    border-radius: 10px 0 0 0;
+    border-radius: 10px;
     padding: 5px;
-    width: 15%;
+    width: 100%;
     background-color: aqua;
   }
 
@@ -32,11 +31,11 @@
     color: var(--primary-color);
     background-color: rgb(241, 241, 241);
     border-radius: 10px 0 0 0;
-    width: 1100px;
+    width: 15%;
   }
 
   .dRight input[type="text"] {
-    width: 1000px;
+    width: 98%;
   }
 
   .fContas input {
@@ -73,17 +72,16 @@
 
   .tdTotal {
     text-align: right;
+    font-weight: 800;
   }
 
   .celTotal {
     background-color: hsl(0, 0%, 100%, 12%);
-    width: 1100px;
+    width: 100%;
     border: none;
   }
   .tbTotalTd {
     border-bottom: 1px solid black;
     font-size: 0.8em;
   }
-
-  
 }

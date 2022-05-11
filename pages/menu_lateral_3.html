@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FINAN$E - Cadastrar Conta</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/responsive/geral.css" />
+     <!-- Bootstrap CSS CDN -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <!-- Our Custom CSS -->
+     <link rel="stylesheet" href="../css/responsive_lateral/menu_lateral/style_menu_lateral.css">
+     <link rel="stylesheet" href="../css/responsive_lateral/xl.css">
+     <link rel="stylesheet" href="../css/responsive_lateral/lg.css">
+     <link rel="stylesheet" href="../css/responsive_lateral/md.css">
+     <link rel="stylesheet" href="../css/responsive_lateral/sm.css">
+     <link rel="stylesheet" href="../css/responsive_lateral/xs.css">
+ </head>
+
+  <body>
+    <header id="header">
+      <div class="header_logo">
+        <h4>
+          FINAN
+          <svg
+            width="8"
+            height="13"
+            viewBox="0 0 8 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 8.74627C8 9.24378 7.86226 9.71144 7.58678 10.1493C7.32231 10.5871 6.92562 10.9552 6.39669 11.2537C5.87879 11.5522 5.26171 11.7313 4.54545 11.791V13H3.47107V11.791C2.43526 11.7015 1.5978 11.408 0.958678 10.9104C0.319559 10.4129 0 9.75622 0 8.9403H2.01653C2.04959 9.32836 2.18733 9.65174 2.42975 9.91045C2.67218 10.1592 3.01928 10.3184 3.47107 10.3881V7.10448C2.73278 6.93532 2.13223 6.76617 1.66942 6.59701C1.20661 6.41791 0.809917 6.1393 0.479339 5.76119C0.15978 5.38308 0 4.86567 0 4.20896C0 3.38308 0.319559 2.70149 0.958678 2.16418C1.5978 1.61692 2.43526 1.29851 3.47107 1.20896V0H4.54545V1.20896C5.51515 1.28856 6.29201 1.56716 6.87603 2.04478C7.47107 2.51244 7.80716 3.1592 7.8843 3.98507H5.86777C5.83471 3.67662 5.70248 3.40298 5.47107 3.16418C5.23967 2.91542 4.93113 2.74627 4.54545 2.65672V5.8806C5.28375 6.0398 5.8843 6.20895 6.34711 6.38806C6.80992 6.55721 7.2011 6.83085 7.52066 7.20896C7.84022 7.57711 8 8.08955 8 8.74627ZM1.91736 4.1194C1.91736 4.52736 2.04959 4.84577 2.31405 5.07463C2.58953 5.30348 2.97521 5.48756 3.47107 5.62687V2.61194C2.99725 2.66169 2.61708 2.81592 2.33058 3.07463C2.0551 3.33333 1.91736 3.68159 1.91736 4.1194ZM4.54545 10.3881C5.0303 10.3184 5.41047 10.1443 5.68595 9.86567C5.96143 9.57711 6.09917 9.23383 6.09917 8.83582C6.09917 8.43781 5.96143 8.12935 5.68595 7.91045C5.42149 7.68159 5.04132 7.49751 4.54545 7.35821V10.3881Z"
+              fill="white"
+            />
+          </svg>
+          E
+        </h4>
+      </div>
+
+      <div class="header_user">
+        <img src="../Image/user.png" alt="Foto de profile do usuário logado" />
+      </div>
+    </header>
+
+    <main>
+      <!-- -------- MENU LATERAL -------- -->
+      <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3 id="nomeUsuario">Bem vindo </h3>
+                <strong>F<svg
+                  width="8"
+                  height="13"
+                  viewBox="0 0 8 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 8.74627C8 9.24378 7.86226 9.71144 7.58678 10.1493C7.32231 10.5871 6.92562 10.9552 6.39669 11.2537C5.87879 11.5522 5.26171 11.7313 4.54545 11.791V13H3.47107V11.791C2.43526 11.7015 1.5978 11.408 0.958678 10.9104C0.319559 10.4129 0 9.75622 0 8.9403H2.01653C2.04959 9.32836 2.18733 9.65174 2.42975 9.91045C2.67218 10.1592 3.01928 10.3184 3.47107 10.3881V7.10448C2.73278 6.93532 2.13223 6.76617 1.66942 6.59701C1.20661 6.41791 0.809917 6.1393 0.479339 5.76119C0.15978 5.38308 0 4.86567 0 4.20896C0 3.38308 0.319559 2.70149 0.958678 2.16418C1.5978 1.61692 2.43526 1.29851 3.47107 1.20896V0H4.54545V1.20896C5.51515 1.28856 6.29201 1.56716 6.87603 2.04478C7.47107 2.51244 7.80716 3.1592 7.8843 3.98507H5.86777C5.83471 3.67662 5.70248 3.40298 5.47107 3.16418C5.23967 2.91542 4.93113 2.74627 4.54545 2.65672V5.8806C5.28375 6.0398 5.8843 6.20895 6.34711 6.38806C6.80992 6.55721 7.2011 6.83085 7.52066 7.20896C7.84022 7.57711 8 8.08955 8 8.74627ZM1.91736 4.1194C1.91736 4.52736 2.04959 4.84577 2.31405 5.07463C2.58953 5.30348 2.97521 5.48756 3.47107 5.62687V2.61194C2.99725 2.66169 2.61708 2.81592 2.33058 3.07463C2.0551 3.33333 1.91736 3.68159 1.91736 4.1194ZM4.54545 10.3881C5.0303 10.3184 5.41047 10.1443 5.68595 9.86567C5.96143 9.57711 6.09917 9.23383 6.09917 8.83582C6.09917 8.43781 5.96143 8.12935 5.68595 7.91045C5.42149 7.68159 5.04132 7.49751 4.54545 7.35821V10.3881Z"
+                    fill="white"
+                  />
+                </svg>E</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="glyphicon glyphicon-home"></i>
+                        Home
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Home 2</a></li>
+                        <li><a href="#">Home 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        About
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="glyphicon glyphicon-duplicate"></i>
+                        Pages
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li><a href="/pages/menu_lateral_1.html">Cadastrar Conta</a></li>
+                        <li><a href="/pages/menu_lateral_2.html">Visualizar Gastos Mensais</a></li>
+                        <li><a href="/pages/menu_lateral_3.html">Visualizar Total</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-link"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-paperclip"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-send"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download Menu Lateral</a></li>
+                <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Artigo Bootstrap/Menu Lateral</a></li>
+            </ul>
+        </nav>
+        <!-- -------- FIM MENU LATERAL -------- -->
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header" id="expandir_texto">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="glyphicon glyphicon-align-left"></i>
+                            <span>Expandir Menu</span>
+                        </button>
+                    </div>
+
+                </div>
+            </nav>
+            <!-- CONTEÚDO -->
+            <p id="tamanhoDeTela"></p>
+
+            <!-- PRÉ-TOTAL - dRight - CENTRO -->
+        <div class="dRight">
+          <h5>TOTAL</h5>
+          <form>
+            <label>Janeiro</label><br />
+            <input type="text" name="celTotalJan" id="celTotalJan" class="celTotalJan"/><br />
+
+            <label>Fevereiro</label><br />
+            <input type="text" name="celTotalFev" id="celTotalFev" /><br />
+
+            <label>Março</label><br />
+            <input type="text" name="celTotalMar" id="celTotalMar" /><br />
+
+            <label>Abril</label><br />
+            <input type="text" name="celTotalAbr" id="celTotalAbr" /><br />
+
+            <label>Maio</label><br />
+            <input type="text" name="celTotalMai" id="celTotalMai" /><br />
+
+            <label>Junho</label><br />
+            <input type="text" name="celTotalJun" id="celTotalJun" /><br />
+
+            <label>Julho</label><br />
+            <input type="text" name="celTotalJul" id="celTotalJul" /><br />
+
+            <label>Agosto</label><br />
+            <input type="text" name="celTotalAgo" id="celTotalAgo" /><br />
+
+            <label>Setembro</label><br />
+            <input type="text" name="celTotalSet" id="celTotalSet" /><br />
+
+            <label>Outubro</label><br />
+            <input type="text" name="celTotalOut" id="celTotalOut" /><br />
+
+            <label>Novembro</label><br />
+            <input type="text" name="celTotalNov" id="celTotalNov" /><br />
+
+            <label>Dezembro</label><br />
+            <input type="text" name="celTotalDez" id="celTotalDez" /><br />
+          </form>
+        </div>
+
+            <!-- FINAL CONTEÚDO -->
+    </div>
+
+    </main>
+
+    <footer>
+      <p>
+        Desenvolvido pora o Hackathon
+        <a href="https://prestartse.netlify.app" target="_blank">PréStartSe</a>
+      </p>
+    </footer>
+    <!--------------------------------------- SCRIPTs --------------------------------------------->
+    <!-- jQuery CDN -->
+     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+     <!-- Bootstrap Js CDN -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <!-- Script Personalizado -->
+     <script type="text/javascript" src="../js/script_menu_lateral.js"></script>
+     <!-- Script Alimentar Tabela-->
+     <script type="text/javascript" src="../js/scripts.js"></script>
+
+  </body>
+</html>

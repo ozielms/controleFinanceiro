@@ -1,22 +1,23 @@
-/*Extra large devices (large desktops, 1200px  e maiores)*/
-@media (min-width: 1200px) {
+/*Extra small devices (portrait phones, menor que 576px)*/
+@media (max-width: 575.98px) {
   /* TABELAS */
 
-  #tamanhoDeTela {
-    min-width: 1100px;
+  .principal {
+    padding: 0;
+    width: 98%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
-
 
   .dLeft {
     color: var(--primary-color);
     border-radius: 10px 0 0 0;
     padding: 5px;
-    width: 15%;
-    background-color: aqua;
+    width: 100%;
   }
 
   .dLeft h5 {
-    font-size: 0.9em;
     text-align: center;
   }
 
@@ -24,7 +25,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: 450px;
     width: 100%;
+  }
+
+  table tr td {
+    background-color: hsl(0, 0%, 100%, 12%);
+    text-align: center;
+  }
+
+  .tbGastos thead tr td {
+    font-size: 0.8em;
+  }
+
+  .meses {
+    width: 100%;
+    max-height: 150px;
+    min-height: 80px;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   .dRight {
@@ -32,11 +51,11 @@
     color: var(--primary-color);
     background-color: rgb(241, 241, 241);
     border-radius: 10px 0 0 0;
-    width: 1100px;
+    width: 100%;
   }
 
   .dRight input[type="text"] {
-    width: 1000px;
+    width: 98%;
   }
 
   .fContas input {
@@ -49,41 +68,22 @@
   }
 
   #dtContas {
-    width: 100%;
+    min-width: 100%;
     font: 14px Verdana;
-  }
-
-  .meses {
-    width: 50%;
-    height: 140px;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-
-  table tr td {
-    background-color: hsl(0, 0%, 100%, 12%);
-    /*width: 140px;*/
-    width: 14%;
-    text-align: center;
-  }
-
-  .tbGastos thead tr td {
-    font-size: 1em;
   }
 
   .tdTotal {
     text-align: right;
+    font-weight: 800;
   }
 
   .celTotal {
     background-color: hsl(0, 0%, 100%, 12%);
-    width: 1100px;
+    width: 100%;
     border: none;
   }
   .tbTotalTd {
     border-bottom: 1px solid black;
     font-size: 0.8em;
   }
-
-  
 }
