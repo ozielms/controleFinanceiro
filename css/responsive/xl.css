@@ -6,7 +6,7 @@
     min-width: 1100px;
   }
 
-
+ 
   .dLeft {
     color: var(--primary-color);
     border-radius: 10px 0 0 0;
@@ -24,7 +24,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    width: 70%;
   }
 
   .dRight {
@@ -32,11 +32,11 @@
     color: var(--primary-color);
     background-color: rgb(241, 241, 241);
     border-radius: 10px 0 0 0;
-    width: 1100px;
+    width: 15%;
   }
 
   .dRight input[type="text"] {
-    width: 1000px;
+    width: 100%;
   }
 
   .fContas input {

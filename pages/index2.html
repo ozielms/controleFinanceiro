@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../css/layout/login/style.css" />
+    <link rel="stylesheet" href="../css/responsive/estilo-resp.css">
+
+  </head>
+  <body>
+    <main>
+      <div class="contentLogin">
+        <div class="titleBox">
+          <h1>Bem Vindo ao FINAN$E</h1>
+          <p>Faça login para entrar na página</p>
+        </div>
+        <div class="form"></div>
+
+        <div class="form">
+          <form action="./pages/menu_lateral_1.html">
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" id="uname" required/>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required/>
+
+              <label class="remember">
+                <input type="checkbox" checked="checked" name="remember" />
+                Remember me
+                <span class="psw"><a href="#">Forgot password?</a></span>
+              </label>
+              <button type="submit">Sign in</button>
+              <button class="google">
+                <img src="../Image/iconGoogle.jpg" alt="" />
+                Sign in with Google
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="ImageLogin">
+        <img src="../Image/imgLogin.jpg" alt="" />
+      </div>
+    </main>
+
+    <!--------------------------------------- SCRIPTs --------------------------------------------->
+    <script type="text/javascript" src="/js/scripts.js" defer></script>
+
+  </body>
+</html>
